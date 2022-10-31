@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+
+hr {
+    border: 1px solid white;
+    background-color: white;
+}
+
+html {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Kanit', sans-serif;
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+    height: 100vh;
+}
+
+body {
+    display: grid;
+    max-height: 900px;
+    border-radius: 15px;
+    z-index: 3;
+    box-shadow: white 0px 0px 20px 9px;
+    height: 90vh;
+    width: 90vw;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 15px;
+}
+
+/* --------------------------------- Search --------------------------------- */
+.section-search {
+    font-family: 'Fuzzy Bubbles', cursive;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px 15px 0 0;
+    height: fit-content;
+    padding: 10px 0;
+    align-items: center;
+}
+
+.div-search {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 0px 0px 50px;
+}
+
+.appIcon {
+    height: fit-content;
+    width: 50px;
+}
+
+.title {
+    margin: 10px 0 2px;
+    color: white;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: rgba(179, 179, 179, 0.732);
+}
+
+
+/* Nickname */
+
+.nickname {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.profileIcon {
+    border: white solid 2px;
+    border-radius: 50%;
+    width: 50px;
+    margin: 0 10px 0 20px;
+}
+
+.clock {
+    border: white solid 2.5px;
+    border-radius: 20px;
+    padding: 3px 8px;
+    margin: 0 20px 0 0;
+}
+
+.logout {
+    width: 30px;
+    margin: 0 30px 0 0;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.logout:active {
+    box-shadow: 0px 0px 1px 2px;
+}
+
+.cogwheel {
+    margin: 0 20px 0;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.cogwheel:active {
+    box-shadow: 0px 0px 1px 2px;
+}
+
+/* --------------------------------- Content --------------------------------- */
+
+.section-content {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 20px 20px;
+    max-height: 100%;
+    justify-content: space-between;
+}
+
+/* Lateral */
+
+.div-lateral {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    border-radius: 15px;
+    border: white solid 2px;
+    justify-content: space-between;
+    box-shadow: 0px 0px 3px white;
+}
+
+.icons-lateral {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 10px;
+}
+
+.checked {
+    padding: 10px;
+    display: flex;
+    border-radius: 15px;
+    margin: 0 7px;
+}
+
+.checked:hover {
+    background-color: rgba(255, 255, 255, 0.109);
+}
+
+.checked:active {
+    box-shadow: 0px 0px 1px 2px white;
+}
+
+.div-lateral input:checked~.checked {
+    box-shadow: 0px 0px 1px 2px rgba(255, 255, 255, 0.488);
+}
+
+
+/* Content */
+
+.div-content {
+    display: flex;
+    border-top: solid white 2px;
+    border-bottom: solid white 2px;
+    justify-content: space-around;
+    padding: 25px;
+    border-radius: 15px;
+    width: 90%;
+    box-shadow: 0px 0px 3px white;
+    gap: 20px;
+}
+
+.div-content h1 {
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    font-size: 45px;
+    color: white;
+    margin-left: 10px;
+}
+
+.perfil-con {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: white solid 3px;
+    object-fit: cover;
+}
+
+.names {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    margin-top: 3px;
+    font-weight: bold;
+}
+
+.prices {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-weight: bold;
+    border: 2px solid white;
+    padding: 5px 8px;
+    border-radius: 15px;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 5px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.produtos input:checked~.itens {
+    transform: scale(3);
+}
+
+.itens {
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+    border: white solid 1px;
+    object-fit: cover;
+    transition: 0.1s;
+}
+
+.itens:hover {
+    box-shadow: 0px 0px 3px white;
+}
+
+.produtos p {
+    color: white;
+}
+
+.produtos hr {
+    width: 150px;
+}
+
+
+.produtos a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    border-radius: 15px;
+    font-weight: bold;
+    margin: 0;
+    position: relative;
+}
+
+.produtos a:hover {
+    background-color: rgba(255, 255, 255, 0.032);
+    box-shadow: 0px 0px 3px white;
+}
+
+.organizate {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    padding: 15px;
+}
+
+.sales {
+    padding: 5px;
+    display: flex;
+    box-shadow: 0px 0px 5px white;
+    border-bottom: solid white 2px;
+    border-top: solid white 2px;
+    border-radius: 15px;
+    gap: 15px;
+}
+
+
+.inside-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.div-perfil {
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* ----------------------------------------------------------------------------- */
+.div-contents {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.div-saldo {
+    display: flex;
+    border-top: solid white 2px;
+    border-bottom: solid white 2px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 3px white;
+    padding: 15px 15px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.div-saldo h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    color: white;
+
+}
+
+.div-saldo p {
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 20px;
+    color: white;
+}
+
+.saldo {
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.eyes {
+    display: flex;
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.eyes:hover {
+    background-color: rgba(255, 255, 255, 0.032);
+    box-shadow: 0px 0px 3px white;
+}
+
+.eyes:active {
+    box-shadow: 0px 0px 1px 2px white;
+}
+
+.column {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    width: 50vh;
+}
+
+.buttons {
+    width: 35px;
+    height: 35px;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.buttons:hover {
+    background-color: rgba(255, 255, 255, 0.032);
+    box-shadow: 0px 0px 3px white;
+}
+
+.buttons:active {
+    box-shadow: 0px 0px 1px 2px white;
+}
+
+.bank-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    border-top: solid white 2px;
+    border-bottom: solid white 2px;
+    border-radius: 15px;
+    box-shadow: 0 0 3px white;
+    gap: 30px;
+}
+
+.label-1 input:checked~.hidden {
+    display: none;
+}
+
+.label-2 input:checked~.show {
+    display: none;
+}
+
+.label-1 input:checked~.labelp1 {
+    display: none;
+}
+
+.label-2 input:checked~.labelp2 {
+    display: none;
+}
+
+
+.div-msg {
+    border-top: solid white 2px;
+    border-bottom: solid white 2px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 3px white;
+    padding: 30px;
+    max-height: 7.5vw;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.div-msg::-webkit-scrollbar {
+    background-color: none;
+    width: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.div-msg::-webkit-scrollbar-thumb {
+    background-color: #30cfd0;
+    border-radius: 5px;
+}
+
+#divz {
+    margin: 0 0 10px;
+}
+
+.rowrow {
+    display: flex;
+    gap: 30px;
+}
+
+
+.message {
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    color: white;
+    padding: 15px;
+    border: solid 1px white;
+    gap: 5px;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+.message div:first-child {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    color: white;
+    padding: 15px;
+    gap: 5px;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+
+.message h2 {
+    font-weight: bold;
+}
+
+.confirm,
+.confirm-2 {
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.confirm-2 {
+    display: none;
+}
+
+.message input:checked~.confirm {
+    display: none;
+}
+
+.message input:checked~.confirm-2 {
+    display: flex;
+}
+
+
+@media screen and (max-width:1323px) {
+
+    .organizate {
+        justify-content: center;
+    }
+
+    .section-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icons-lateral {
+        flex-direction: row;
+        margin-top: 0;
+    }
+
+    .div-lateral {
+        flex-direction: row;
+        align-items: center;
+        padding: 5px;
+        width: 70vw;
+    }
+
+    #divz {
+        margin: 0 0 0 0;
+    }
+
+    .div-content {
+        width: 70vw;
+        padding: 15px 10px;
+    }
+
+    .div-contents {
+        display: none;
+    }
+
+    .buttons {
+        height: 25px;
+        width: 25px;
+
+    }
+
+    .div-saldo {
+        padding: 15px;
+    }
+
+    .bank-buttons {
+        gap: 5px;
+    }
+
+    .div-content h1 {
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width:1456px) {
+    .column {
+        width: 40vh;
+    }
+}
+
+@media screen and (max-width:1350px) {
+    .div-contents {
+        display: none;
+    }
+}
